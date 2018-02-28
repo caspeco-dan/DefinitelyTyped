@@ -719,6 +719,8 @@ export interface ScatterProps extends EventAttributes, Partial<PresentationAttri
     shape?: 'circle' | 'cross' | 'diamond' | 'square' | 'star' | 'triangle' | 'wye' | React.ReactElement<any> | ContentRenderer<any>;
     points?: ScatterPoint[];
     hide?: boolean;
+    data?: object[];
+    name?: string | number;
 }
 
 export class Scatter extends React.Component<ScatterProps> { }
